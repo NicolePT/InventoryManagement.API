@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace InventoryManagement.API.Models;
 
-public class Inventory
+public class Item
 {
     public int Id { get; set; }
     [Required]
@@ -12,5 +12,5 @@ public class Inventory
     [Required]
     public string Description { get; set; }
     [Required]
-    public string quantity { get; set; }
+    public int Quantity { get; set; }
 }

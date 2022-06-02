@@ -5,7 +5,7 @@ namespace InventoryManagement.API;
 
 public class ApplicationDbContext: DbContext
 {
-    private DbSet<Inventory> Inventories { get; set; }
+    public DbSet<Item> Items { get; set; }
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
         
