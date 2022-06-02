@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using InventoryManagement.API.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace InventoryManagement.API.Controllers
 {
-    [Route("api/[controller]")]
+    
+    [Route("api/inventory")]
     [ApiController]
     public class InventoryController : ControllerBase
     {
